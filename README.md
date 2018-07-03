@@ -4,7 +4,7 @@
 ### Table of Contents
 </br>
 
-**[1. Tool Selection]()**
+**[1. Tool Selection](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#1-tool-selection)**
 
 **[2. Data Loading](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#2-data-loading)**
 
@@ -94,14 +94,18 @@ Step 4: As we were required to plot the difference in permit application date an
 **URL:** [Click here](!https://app.powerbi.com/view?r=eyJrIjoiZGQzNGFhZjktOTQxNS00OTdhLTlkZDMtMTBhYTRhYzBlMmU4IiwidCI6ImQ3OTA5NTVjLTc5MDMtNDc1NC04NDJiLTMyNTAzZDliNmVkYiIsImMiOjEwfQ%3D%3D)
 
 </br>
+
 ![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage7.png?alt=media&token=f3156e1d-5170-4e2b-8628-b27c17b83ca5)
+
 </br>
 </br>
 
 ### 5. Output
 
 #### 1. GeoSpatial Visualization
+
 </br>
+
 ![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage1.png?alt=media&token=0975c4b5-1f1b-4e6b-be40-0ea383ae40b6)
 
 
@@ -175,6 +179,7 @@ Total number of permits for commercial building is 1197 across all 15 building t
 
 
 </br>
+
 ### 6. REFERENCE
 
 [1]	“Introduction to DAX - Power BI.” [Online]. Available: https://docs.microsoft.com/en-us/power-bi/guided-learning/introductiontodax?tutorial-step=1. [Accessed: 02-Jul-2018]
