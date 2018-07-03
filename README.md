@@ -90,7 +90,8 @@ Step 4: As we were required to plot the difference in permit application date an
 ### 4. Dashboard
 
 
-**URL:** [Click here](!https://app.powerbi.com/view?r=eyJrIjoiZGQzNGFhZjktOTQxNS00OTdhLTlkZDMtMTBhYTRhYzBlMmU4IiwidCI6ImQ3OTA5NTVjLTc5MDMtNDc1NC04NDJiLTMyNTAzZDliNmVkYiIsImMiOjEwfQ%3D%3D)
+**URL:**
+[Click here](https://app.powerbi.com/view?r=eyJrIjoiZGQzNGFhZjktOTQxNS00OTdhLTlkZDMtMTBhYTRhYzBlMmU4IiwidCI6ImQ3OTA5NTVjLTc5MDMtNDc1NC04NDJiLTMyNTAzZDliNmVkYiIsImMiOjEwfQ%3D%3D)
 
 </br>
 
