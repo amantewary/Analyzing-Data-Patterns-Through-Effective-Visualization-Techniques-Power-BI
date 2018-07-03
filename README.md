@@ -2,17 +2,36 @@
 
 
 ### Table of Contents
+</br>
+
+**[1. Tool Selection]()**
+
+**[2. Data Loading]()**
+
+**[3. Data Cleaning]()**
+
+**[4. Dashboard]()**
+
+**[5. Output]()**
+
+**[6. Feature Selection]()**
+
+**[7. Output]()**
+
+**[8. Code Submission]()**
+
+**[9. References]()**
 
 
 </br>
-### Tool Selection
+### 1. Tool Selection
 
 
-In this assignment we were required to visualize data provided by Halifax Regional Municipality. To complete the required task effectively, we used Microsoft Power BI which is a business analytics service. We chose Power BI because it provides interactive visualizations with self-service business intelligence capabilities. Power Bi supports Data Analysis Expression (DAX) which is a library of functions and operators that can be combined to build formulas [1]. We utilized DAX for data cleaning and data manipulation. Power BI also supports real-time filtering of data which we utilized to provide better insight on the given dataset.
+In this assignment we were required to visualize data provided by Halifax Regional Municipality. To complete the required task effectively, we used Microsoft Power BI which is a business analytics service. We chose Power BI because it provides interactive visualizations with self-service business intelligence capabilities. Power Bi supports Data Analysis Expression (DAX) which is a library of functions and operators that can be combined to build formulas [[1]()]. We utilized DAX for data cleaning and data manipulation. Power BI also supports real-time filtering of data which we utilized to provide better insight on the given dataset.
 
 </br>
 
-### Data Loading
+### 2. Data Loading
 
 Step 1: From the top panel click on Enter Data and select Text/CSV
 
@@ -29,11 +48,11 @@ Alternatively, user can load data using following query in query editor
 
 
 
-    Csv.Document(File.Contents("C:\Users\amant\Downloads\Building_Permits.csv"),[Delimiter="	", Columns=30, Encoding=1252, QuoteStyle=QuoteStyle.None])
+    Csv.Document(File.Contents("C:\Users\amant\Downloads\Building_Permits.csv"),[Delimiter=" ", Columns=30, Encoding=1252, QuoteStyle=QuoteStyle.None])
 
 </br>
 
-### Data Cleaning
+### 3. Data Cleaning
 
 Step 1: Data is formatted and given its data type using following query.
 
@@ -67,7 +86,7 @@ Step 4: As we were required to plot the difference in permit application date an
 
 </br>
 
-### Dashboard
+### 4. Dashboard
 
 
 **URL:** 
@@ -76,7 +95,7 @@ Step 4: As we were required to plot the difference in permit application date an
 
 </br>
 
-### Output
+### 5. Output
 
 #### 1. GeoSpatial Visualization
 
@@ -99,5 +118,48 @@ There are total 84,777 permits across all six permit types. The minimum value is
 We plotted the maximum days difference in permit application date and permit issuance date  by Community and by Permit Type. We filtered out communities with less than 5 days difference. The sum of maximum of difference in permit application date and permit is 101608 days across all 177 communities. The distribution ranges from 12 days  (Brookvale) to 7365 days(Dartmouth), a difference of 7 7353 days, averaging 574 days. The top six communities represent over a quarter (26%) of overall value. The top 3 communities based on total maximum days difference across all permit types are discussed in details below:
 
 
+**Dartmouth:**
+
+The sum of maximum days difference is 7365 across all five permits (representing 7.25% of total sum of maximum difference across all 177 communities.) The minimum value is 403(Blasting) and the maximum is 3852 (DP Only) which is almost three times bigger than the average across the five permits.
+
+**Halifax:**
+
+The sum of maximum days difference is 6191 across all six permits (representing 6.09% of total sum of maximum difference across all 177 communities.) The minimum value is 8(WNOPA) and the maximum is 1798(DP Only).
+
+**North Preston:**
+
+The sum of maximum days difference is 3956 across all four permits (representing 3.89% of total sum of maximum difference across all 177 communities.) The minimum value is five(SIGN) and the maximum is 3677 (Demolition).
+
+</br>
+
+#### 4. Average Estimated Value of a Project by Building Type
+
+**Analysis:**
+
+In the given dataset, there are 83 types of building. 
+However, we have dropped “Unknown” type as it was added during data cleaning by replacing blank fields. 
+
+The sum of average of estimated value of project is $48.7 million across all 81 types of buildings. The distribution ranges from $3,750 (Community Based Option) to $9.9 million (Library), a difference of $9.9 million, averaging $601,291. The distribution is positively skewed as the average of $601,291 is much greater than the median of $205,191. Average of Estimated value of project is very concentrated with 77% of total represented by just 19 of 81 types of buildings (23%). Post Secondary and Parking Structure were outliers with very high Average of Estimated value of project.
+
+</br>
+
+#### 5. Permit Issued For Commercial Buildings by Community.
+
+**Analysis:**
+
+We added Community with the building type and count of estimated value of project. We filtered out all the non-commercial buildings. We added a filter in the count of Estimated value of project to retrieve only values greater than 10 as there was significant gap in distribution of data.  
+
+The total number of permits for commercial buildings is 1791 across all five communities. The distribution ranges from 31 (Lower Sackville) to 1197 (Halifax), a difference of 1166, averaging 358.2. Halifax (1197) is more than three times bigger than the average across the five communities. Halifax has the highest number of permits issued for commercial buildings. It is discussed below in more details:
 
 
+
+**Halifax:**
+
+Total number of permits for commercial building is 1197 across all 15 building types (representing 67% of total number of permits). The distribution ranges from 11 (Strip Mall) to 301 (Office), a difference of 290, averaging 79.8. The distribution is positively skewed as the average of 79.8 is much greater than the median 41. Halifax is relatively concentrated with 84% of the total represented by six of the 15 building types . Office accounts for a quarter of overall number of permits (301) which is almost four times bigger than the average across the 15 commercial building types.
+
+
+</br>
+### 6. REFERENCE
+[1]	“Introduction to DAX - Power BI.” [Online]. Available: https://docs.microsoft.com/en-us/power-bi/guided-learning/introductiontodax?tutorial-step=1. [Accessed: 02-Jul-2018]
+
+[2]	“.Building Permits” [Online]. Available: https://catalogue-hrm.opendata.arcgis.com/datasets/building-permits. [Accessed: 02-Jul-2018]
