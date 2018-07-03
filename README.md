@@ -14,7 +14,7 @@
 
 **[5. Output](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#5-output)**
 
-**[6. References]()**
+**[6. References](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#6-reference)**
 
 
 </br>
@@ -22,7 +22,7 @@
 ### 1. Tool Selection
 
 
-In this assignment we were required to visualize data provided by Halifax Regional Municipality. To complete the required task effectively, we used Microsoft Power BI which is a business analytics service. We chose Power BI because it provides interactive visualizations with self-service business intelligence capabilities. Power Bi supports Data Analysis Expression (DAX) which is a library of functions and operators that can be combined to build formulas [[1]()]. We utilized DAX for data cleaning and data manipulation. Power BI also supports real-time filtering of data which we utilized to provide better insight on the given dataset.
+In this assignment we were required to visualize data provided by Halifax Regional Municipality. To complete the required task effectively, we used Microsoft Power BI which is a business analytics service. We chose Power BI because it provides interactive visualizations with self-service business intelligence capabilities. Power Bi supports Data Analysis Expression (DAX) which is a library of functions and operators that can be combined to build formulas [[1](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#6-reference)]. We utilized DAX for data cleaning and data manipulation. Power BI also supports real-time filtering of data which we utilized to provide better insight on the given dataset.
 
 </br>
 
@@ -44,7 +44,6 @@ Step 3: The loaded data is automatically formatted into Tab Delimiter CSV file.
 </br>
 
 Alternatively, user can load data using following query in query editor
-
 
 
     Csv.Document(File.Contents("C:\Users\amant\Downloads\Building_Permits.csv"),[Delimiter=" ", Columns=30, Encoding=1252, QuoteStyle=QuoteStyle.None])
