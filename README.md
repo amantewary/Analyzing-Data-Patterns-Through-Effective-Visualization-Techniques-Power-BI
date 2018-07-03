@@ -6,24 +6,19 @@
 
 **[1. Tool Selection]()**
 
-**[2. Data Loading]()**
+**[2. Data Loading](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#2-data-loading)**
 
-**[3. Data Cleaning]()**
+**[3. Data Cleaning](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#3-data-cleaning)**
 
-**[4. Dashboard]()**
+**[4. Dashboard](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#4-dashboard)**
 
-**[5. Output]()**
+**[5. Output](https://github.com/amantewary/Analyzing-Data-Patterns-Through-Effective-Visualization-Techniques-Power-BI#5-output)**
 
-**[6. Feature Selection]()**
-
-**[7. Output]()**
-
-**[8. Code Submission]()**
-
-**[9. References]()**
+**[6. References]()**
 
 
 </br>
+
 ### 1. Tool Selection
 
 
@@ -35,14 +30,18 @@ In this assignment we were required to visualize data provided by Halifax Region
 
 Step 1: From the top panel click on Enter Data and select Text/CSV
 
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage6.png?alt=media&token=32834406-2829-494e-a157-8c4f5f0435d2)
 
-
+</br>
 Step 2: From Windows Explorer pop-up select the Building_Permits.csv [2] file.
 
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage12.png?alt=media&token=35ed1f12-0434-4a74-a7f7-9ec6849c7510)
 
+</br>
 Step 3: The loaded data is automatically formatted into Tab Delimiter CSV file.
 
-
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage11.png?alt=media&token=1217c3ca-b2b7-4c84-a17e-00722a7b2046)
+</br>
 
 Alternatively, user can load data using following query in query editor
 
@@ -64,7 +63,10 @@ Step 1: Data is formatted and given its data type using following query.
 
 Step 2: After loading and formatting data, Power BI gave an error in following rows because the data type of Permit_Number column is whole number, however, these three rows contained string values.
 
-
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage5.png?alt=media&token=ad2814c3-08a5-476a-acf8-9fde757a9562)
+</br>
+</br>
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage2.png?alt=media&token=b08c4b73-f791-4316-b191-cb93c18a3439)
 
 
 To clean the data we replaced the “Error” with random Permit_Number using following query. (It should noted that to avoid any issue with visualization, these three rows were filtered out while plotting.)
@@ -89,15 +91,19 @@ Step 4: As we were required to plot the difference in permit application date an
 ### 4. Dashboard
 
 
-**URL:** 
+**URL:** [Click here](!https://app.powerbi.com/view?r=eyJrIjoiZGQzNGFhZjktOTQxNS00OTdhLTlkZDMtMTBhYTRhYzBlMmU4IiwidCI6ImQ3OTA5NTVjLTc5MDMtNDc1NC04NDJiLTMyNTAzZDliNmVkYiIsImMiOjEwfQ%3D%3D)
 
-[Click here](!https://app.powerbi.com/view?r=eyJrIjoiZGQzNGFhZjktOTQxNS00OTdhLTlkZDMtMTBhYTRhYzBlMmU4IiwidCI6ImQ3OTA5NTVjLTc5MDMtNDc1NC04NDJiLTMyNTAzZDliNmVkYiIsImMiOjEwfQ%3D%3D)
-
+</br>
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage7.png?alt=media&token=f3156e1d-5170-4e2b-8628-b27c17b83ca5)
+</br>
 </br>
 
 ### 5. Output
 
 #### 1. GeoSpatial Visualization
+</br>
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage1.png?alt=media&token=0975c4b5-1f1b-4e6b-be40-0ea383ae40b6)
+
 
 **Analysis**
 
@@ -105,6 +111,9 @@ Total number of permit is 84,777 across all 192 communities. The distribution ra
 
 
 #### 2. Count of Permit per Type
+</br>
+
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage8.png?alt=media&token=5571deab-096d-4c37-9bd1-820a2c43b81b)
 
 **Analysis**
 
@@ -112,6 +121,9 @@ There are total 84,777 permits across all six permit types. The minimum value is
 
 
 #### 3. Maximum Time Gap For Various Permit Type
+</br>
+
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage9.png?alt=media&token=32389e0a-da36-4b3f-a05a-b80324bca229)
 
 **Analysis:**
 
@@ -134,6 +146,8 @@ The sum of maximum days difference is 3956 across all four permits (representing
 
 #### 4. Average Estimated Value of a Project by Building Type
 
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage4.png?alt=media&token=253d4a35-a91a-4729-8595-f4cf58888f8a)
+
 **Analysis:**
 
 In the given dataset, there are 83 types of building. 
@@ -144,6 +158,8 @@ The sum of average of estimated value of project is $48.7 million across all 81 
 </br>
 
 #### 5. Permit Issued For Commercial Buildings by Community.
+
+![](https://firebasestorage.googleapis.com/v0/b/assignment4-fc96b.appspot.com/o/assignment_4_Dw%2Fimage10.png?alt=media&token=10d1b52f-6548-4722-a3ed-bc681c1657b6)
 
 **Analysis:**
 
@@ -160,6 +176,7 @@ Total number of permits for commercial building is 1197 across all 15 building t
 
 </br>
 ### 6. REFERENCE
+
 [1]	“Introduction to DAX - Power BI.” [Online]. Available: https://docs.microsoft.com/en-us/power-bi/guided-learning/introductiontodax?tutorial-step=1. [Accessed: 02-Jul-2018]
 
 [2]	“.Building Permits” [Online]. Available: https://catalogue-hrm.opendata.arcgis.com/datasets/building-permits. [Accessed: 02-Jul-2018]
